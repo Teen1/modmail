@@ -96,13 +96,13 @@ class Modmail(commands.Cog):
         )
 
         embed.add_field(
-            name="Thanks for using our bot!",
-            value="If you like what you see, consider giving the "
-            "[repo a star](https://github.com/kyb3r/modmail) :star: and if you are "
-            "feeling extra generous, buy us coffee on [Patreon](https://patreon.com/kyber) :heart:!",
+            name="Thanks for choosing us!",
+            value="Make sure to give us your ratings so we can always improve! "
+            "Enjoy using the bot :star: "
+            "Have a great day! :heart:",
         )
 
-        embed.set_footer(text=f'Type "{self.bot.prefix}help" for a complete list of commands.')
+        embed.set_footer(text=f'If you have any issues make sure to let us know!')
         await log_channel.send(embed=embed)
 
         self.bot.config["main_category_id"] = category.id
